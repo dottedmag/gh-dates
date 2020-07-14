@@ -1,0 +1,12 @@
+{
+  "name": "GitHub full dates",
+  "version": "1.0",
+  "description": "Surface full dates in GitHub interface",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["full-times.js"]
+    }
+  ]
+}
