@@ -8,9 +8,9 @@
     let format = d => {
         return pad(d.getUTCDate(), 2)+"-"+
             pad(d.getUTCMonth()+1, 2)+"-"+
-            pad(d.getUTCFullYear())+" "+
-            pad(d.getUTCHours())+":"+
-            pad(d.getUTCMinutes())+" UTC";
+            pad(d.getUTCFullYear(), 4)+" "+
+            pad(d.getUTCHours(), 2)+":"+
+            pad(d.getUTCMinutes(), 2)+" UTC";
     };
 
     let els = document.querySelectorAll("relative-time");
